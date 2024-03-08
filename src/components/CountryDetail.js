@@ -20,11 +20,11 @@ const CountryDetail = () => {
     return (
         <>
             <Header />
-            <section className='p-20'>
+            <section className='p-7 md:p-20'>
                 {country.map((c) => {
-                    const { idd, flags, name, region, subregion, population, capital, borders } = c;
+                    const { flags, name, region, subregion, population, capital, borders } = c;
 
-                    return <article className='grid grid-cols-2 place-items-center' key={idd}>
+                    return <article className='grid grid-cols-1 md:grid-cols-2 md:place-items-center' key={name.common}>
                         <img className='rounded md:h-72 w-full object-cover' src={flags.svg} alt={name} />
 
                         <div>
@@ -43,7 +43,7 @@ const CountryDetail = () => {
                                     <>
                                         <div className='mt-3'>
                                             <h5 className='font-semibold tracking-wide'>Borders: </h5>
-                                            <ul className='flex flex-wrap items-center justify-center gap-2'>
+                                            <ul className='flex flex-wrap md:items-center md:justify-center gap-2'>
                                                 {borders.map((b) => (
                                                     <li key={b} className='py-1 px-4 bg-slate-700 rounded-lg'>
                                                         {b}

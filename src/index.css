@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* tried using this method for darkMode and LightMode
+.dark-mode {
+    @apply bg-slate-700 text-white;
+
+    body{
+        @apply bg-gray-900;
+
+    }
+}
+
+.light-mode {
+    @apply bg-gray-300 text-black;
+
+    body{
+        @apply bg-slate-400;
+    }
+}
+*/
